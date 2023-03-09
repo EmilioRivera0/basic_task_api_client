@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Hola</h1>
+<ul>
+  {% for it in response.tasks %}
+  <li>{{it.name}}</li>
+  {% endfor %}
+</ul>
+{% endblock %}
