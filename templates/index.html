@@ -1,10 +1,34 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h1>Hola</h1>
-<ul>
-  {% for it in response.tasks %}
-  <li>{{it.name}}</li>
-  {% endfor %}
-</ul>
+<div class="container">
+  <h1>Hola</h1>
+</div>
+<div class="container">
+  <h3>Uncompleted tasks: {{uncompleted_len}}</h3>
+  <ul>
+    {% for it in content['incomplete_tasks'].keys() %}
+    <li>{{it}}.- {{content['incomplete_tasks'][it]['name']}}</li>
+    {% endfor %}
+  </ul>
+</div>
+<div class="container">
+  <h3>Completed tasks: {{completed_len}}</h3>
+  <ul>
+    {% for it in content['complete_tasks'].keys() %}
+    <li>{{it}}.- {{content['complete_tasks'][it]['name']}}</li>
+    {% endfor %}
+  </ul>
+</div>
+<div class="container">
+  <form method="post">
+    <div class="container">
+      <h6>Name</h6>
+      <input type="text" placeholder="Name..." name="name" id="name">
+    </div>
+    <div class="container">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
 {% endblock %}
