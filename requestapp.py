@@ -105,4 +105,3 @@ def delete_task(_id):
 #API program start point ----->
 if __name__ == '__main__':
     app.run(debug=True)
-put(SERVER_URL+'update',data={'id':3})
