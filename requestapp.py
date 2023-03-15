@@ -15,12 +15,13 @@ from requests import get, post, put, delete
 #object declaration ----->
 #creating the Flask app object 
 app = Flask(__name__)
+
 #URL of the Server API (uploaded by me)
 # *if this link does not work, clone the "basic task api" repository from my account and upload it to a server to use it instead
-#SERVER_URL = 'https://task-management-api-0ds8.onrender.com/api/'
+SERVER_URL = 'https://task-management-api-0ds8.onrender.com/api/'
 
 #for debugging 
-SERVER_URL = 'http://127.0.0.1:5001/api/'
+#SERVER_URL = 'http://127.0.0.1:5001/api/'
 
 #function declaration ----->
 #home page of task manager with get and post methods to view the tasks and append new ones respectively
