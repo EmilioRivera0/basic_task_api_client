@@ -8,7 +8,7 @@ Web Client to interact with the task management API.
 
 ## Tech Stack
 
-**Server:** Flask
+**Client:** Flask
 
 ## Authors
 
