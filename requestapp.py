@@ -88,7 +88,7 @@ def update_status(_id):
         #generate 404 error if an exception is thrown
         abort(404)
     #redirect to index page to view changes
-    return redirect('/',308)
+    return redirect('/')
 
 #delete method to remove a task from the completed tasks list
 @app.route('/delete/<int:_id>',methods=['GET'])
@@ -101,7 +101,7 @@ def delete_task(_id):
         #generate 404 error if an exception is thrown
         abort(404)
     #redirect to index page to view changes
-    return redirect('/',308)
+    return redirect('/')
 
 #API program start point ----->
 if __name__ == '__main__':
